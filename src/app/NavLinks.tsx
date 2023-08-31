@@ -13,7 +13,7 @@ const  NavLinks=()=> {
     return pathname?.split("/").pop()===path
   }
   return (
-    <nav className='grid grid-cols-4 text-xs md:text-sm gap-4 pb-10 max-w-6xl mx-auto border-b'>
+    <nav className='grid grid-cols-4 text-xs md:text-sm gap-4 pb-10 max-w-6xl mx-auto border-b '>
       {categories.map((category)=>
         (  <Links key={category} category={category} isActive={isActive(category)} >
           {category}
