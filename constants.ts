@@ -1,6 +1,6 @@
 export const categories : Category[] = [
     "home",
-    "pages",
+    "Article",
     "services",
     "contact"
 ]
