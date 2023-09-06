@@ -1,12 +1,36 @@
 "use client";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
 import Form from "@/components/Form/page";
+import Link from "next/link";
+import CourseModal1 from "@/components/Modal/Course1Modal/page";
+import CourseModal2 from "@/components/Modal/Course2Modal/page";
+import CourseModal3 from "@/components/Modal/Course3Modal/page";
+
 // ..
 
 function Objects() {
+
+
+
+
+// container modal popups
+
+const [showPopup, setShowPopup] = useState(false);
+  const [selectedPlan, setSelectedPlan] = useState("");
+
+  const openPopup = (plan:string) => {
+    setSelectedPlan(plan);
+    setShowPopup(true);
+  };
+
+  const closePopup = () => {
+    setSelectedPlan("");
+    setShowPopup(false);
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 1500,
@@ -28,9 +52,12 @@ function Objects() {
             success. #SkillsMasters
           </h1>
           <div className="w-10/12">
-          <button className="w-[250px] rounded h-[65px] bg-[#9DBDFF]">
+
+            <Link href={"/aboutUs"}>
+          <button className="w-[250px] rounded h-[65px] bg-[#9DBDFF] hover:bg-[#80a8f7]">
             About Us
           </button>
+            </Link>
           </div>
         </div>
         <div
@@ -68,12 +95,25 @@ function Objects() {
             </p>
           </div>
 
-          <div className="w-10/12 flex flex-col items-center">
-            <button className="w-[250px] lg:w-10/12 h-[65px] border-2">
+          <div  className="w-10/12 flex flex-col items-center">
+            <button
+            
+            onClick={()=>{
+              openPopup("course-1")
+            }}
+            className="w-[250px] lg:w-10/12 h-[65px] border-2">
               Read More
             </button>
           </div>
         </div>
+        {/* Course1 Modal */}
+        {showPopup && selectedPlan==="course-1"?<CourseModal1/>:(
+          showPopup && selectedPlan==="course-2"?<CourseModal2/>:(
+            showPopup && selectedPlan==="course-3"?<CourseModal3/>: null
+          )
+        )}
+
+        {/* Course 1 end */}
         {/* Course 2 */}
         <div
           data-aos="fade-up"
@@ -96,7 +136,11 @@ function Objects() {
           </div>
 
           <div className="w-10/12 flex flex-col items-center">
-            <button className="w-[250px] lg:w-10/12 h-[65px] border-2">
+            <button
+             onClick={()=>{
+              openPopup("course-2")
+            }}
+            className="w-[250px] lg:w-10/12 h-[65px] border-2">
               Read More
             </button>
           </div>
@@ -123,7 +167,11 @@ function Objects() {
           </div>
 
           <div className="w-10/12 flex flex-col items-center">
-            <button className="w-[250px] lg:w-10/12 h-[65px] border-2">
+            <button 
+             onClick={()=>{
+              openPopup("course-3")
+            }}
+            className="w-[250px] lg:w-10/12 h-[65px] border-2">
               Read More
             </button>
           </div>
@@ -137,9 +185,7 @@ function Objects() {
           data-aos="fade-right"
           className="w-full   flex flex-col items-center justify-center gap-2 "
         >
-          <div>
-            <h1>ABOUT US</h1>
-          </div>
+          
           <h1 className="text-[30px]  lg:text-[30px]   font-serif  text-center  font-semibold">
             Discover the Art of Business Management through Vocational Training
           </h1>
@@ -251,7 +297,7 @@ function Objects() {
           {/* Services */}
           <div className="grid grid-cols-1 w-full gap-4">
             {/* 1st services */}
-            <div className="bg-red-500 ">
+            <div className="">
               <h1>Cosmetology</h1>
               <h1 className="font-thin">
                 The version have evolved over the sometimes by acident.
@@ -288,7 +334,7 @@ function Objects() {
           data-aos="fade-right"
           className="w-full items-center flex justify-center md:order-first"
         >
-          <img src={"/images/PIC5.jpg"} alt="photo" className="" />
+          <img src={"/images/PIC6.jpg"} alt="photo" className="" />
         </div>
       </div>
 

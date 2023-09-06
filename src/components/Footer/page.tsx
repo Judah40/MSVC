@@ -4,14 +4,14 @@ import React from "react";
 import { AiFillFacebook, AiFillInstagram } from "react-icons/ai";
 function Footer() {
   return (
-    <div className="background-main h-[500px] md:h-96 w-full flex justify-center pt-8 content-center">
+    <div className="background-main h-[550px] md:h-96 w-full flex justify-center pt-8 content-center">
       <div className="h-60 w-9/12  gap-4  flex flex-col ">
         <div className="grid grid-cols-2  h-12">
           <Link href={"/"} prefetch={false}>
             <h1 className="font-serif text-4xl text-white">msvc</h1>
           </Link>
 
-          <div className=" flex flex-1 justify-end gap-12">
+          <div className=" flex flex-1 justify-end gap-4">
             <Link href={"https://facebook.com"}>
               <div className=" border rounded ">
                 <AiFillFacebook className="w-10 h-10 text-white" />
