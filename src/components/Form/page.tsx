@@ -32,7 +32,7 @@ const Form: React.FC = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className='items-center w-full lg:w-10/12 p-6 space-y-10 flex flex-col border shadow-xl'>
+    <form onSubmit={handleSubmit} className='items-center w-full lg:w-10/12 p-4 md:p-8 space-y-10 flex flex-col border shadow-xl'>
       <div className="w-11/12 h-14 pl-4 border-2 gap-2 flex flex-row items-center">
         <label>
           <FaUser /> 

@@ -40,7 +40,7 @@ function Footer() {
             </div>
             <div>
               <Link
-                href={"/"}
+                href={"/Article"}
                 style={{ color: "white", textDecoration: "underline" }}
               >
                 Articles
@@ -48,7 +48,7 @@ function Footer() {
             </div>
             <div>
               <Link
-                href={"/"}
+                href={"/services"}
                 style={{ color: "white", textDecoration: "underline" }}
               >
                 Services
@@ -56,7 +56,7 @@ function Footer() {
             </div>
             <div>
               <Link
-                href={"/"}
+                href={"/contact"}
                 style={{ color: "white", textDecoration: "underline" }}
               >
                 Contact

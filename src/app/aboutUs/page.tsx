@@ -31,10 +31,7 @@ function aboutUs() {
 
         {/* pic */}
         <div className="bg-blue-500">
-          <img
-            src="/images/PIC7.jpg"
-            className="w-80  border border-black"
-          />
+          <img src="/images/PIC7.jpg" className="  border shadow-md" />
         </div>
       </div>
 
@@ -114,13 +111,9 @@ function aboutUs() {
           <hr className="w-full h-12" />
         </div>
 
-
         <div className=" grid grid-cols-1 md:grid-cols-2  ">
           <div className=" flex justify-center ">
-            <img
-              src="/images/PIC8.jpg"
-              className="w-96  "
-            />
+            <img src="/images/PIC8.jpg" className="w-96  " />
           </div>
           <div className="flex background-main flex-col w-full md:max-w-sm p-8 items-center justify-center">
             <h1 className="text-white">SHORT STORY ABOUT US</h1>
@@ -140,8 +133,44 @@ function aboutUs() {
 
 
 
-
         {/* Follow on instagram and facebook */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mt-12 lg:p-20">
+          {/* pic and words
+           */}
+          <div className="grid grid-rows-2 md:gap-12">
+            {/* first text header */}
+            <div className=" grid place-items-center">
+              <h1 className="text-center">SHARE US</h1>
+              <h1 className="max-w-xs  font-bold font-serif text-center text-4xl">
+                Follow Us on Instagram{" "}
+              </h1>
+              <p className="text-sm font-thin p-4 ">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Mi
+                eget mauris pharetra et ultrices neque ornare. Nunc aliquet
+                bibendum enim facilisis gravida neque convallis a. Cursus in hac
+                habitasse platea dictumst quisque. Malesuada fames ac turpis
+                egestas integer. Senectus et netus et malesuada fames ac turpis.
+              </p>
+            </div>
+
+            {/* Pic1 */}
+            <div>
+              <img src="/images/PIC9.jpg" />
+            </div>
+          </div>
+
+          <div className="grid grid-rows-2 gap-12 md:gap-12">
+            {/* pic2 */}
+            <div>
+              <img src="/images/PIC10.jpg"/>
+            </div>
+            {/* pic2 */}
+            <div>
+              <img src="/images/PIC11.jpg"/>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
