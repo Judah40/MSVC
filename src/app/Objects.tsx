@@ -38,7 +38,7 @@ const [showPopup, setShowPopup] = useState(false);
   }, []);
   return (
     <div className="gap-8 grid">
-      <div className="background grid grid-cols-1 md:grid-cols-2  ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 p-12 ">
         <div
           data-aos="fade-right"
           className="w-full  p-4   flex flex-col items-center justify-center gap-6"
@@ -62,7 +62,7 @@ const [showPopup, setShowPopup] = useState(false);
         </div>
         <div
           data-aos="fade-left"
-          className="w-full h-96 bg-blue-400 rounded border-4  items-center flex justify-center "
+          className="w-full  h-96 bg-blue-400 rounded border-4  items-center flex justify-center "
         >
           <img
             src={"/images/IMG_0087.jpg"}
@@ -180,7 +180,7 @@ const [showPopup, setShowPopup] = useState(false);
 
       {/* About US */}
 
-      <div className="background grid grid-cols-1 md:grid-cols-2 p-12 gap-4 ">
+      <div className=" grid grid-cols-1 md:grid-cols-2 p-12 gap-4 ">
         <div
           data-aos="fade-right"
           className="w-full   flex flex-col items-center justify-center gap-2 "
@@ -199,19 +199,19 @@ const [showPopup, setShowPopup] = useState(false);
           <div className=" grid grid-cols-3 gap-12 place-items-center ">
             <div
               data-aos="fade-right"
-              className="max-w-xs  h-24 w-24 border-[0.1px] border-white  place-items-center grid"
+              className="max-w-xs  h-24 w-24 border-[0.1px] border-gray-300  place-items-center grid"
             >
               <img src="/images/Icon.png" className="w-12 h-12" />
             </div>
             <div
               data-aos="fade-up"
-              className="max-w-xs  h-24 w-24  border-[0.1px] border-white place-items-center grid"
+              className="max-w-xs  h-24 w-24  border-[0.1px] border-gray-300 place-items-center grid"
             >
               <img src="/images/Icon(1).png" className="w-12 h-12" />{" "}
             </div>
             <div
               data-aos="fade-left"
-              className="max-w-xs  h-24 w-24 border-[0.1px] border-white  place-items-center grid"
+              className="max-w-xs  h-24 w-24 border-[0.1px] border-gray-300  place-items-center grid"
             >
               <img src="/images/Vector.png" className="w-12 h-12" />{" "}
             </div>
@@ -339,7 +339,7 @@ const [showPopup, setShowPopup] = useState(false);
       </div>
 
       {/* Testimonies */}
-      <div className="background grid grid-col-1 w-full">
+      <div className=" grid grid-col-1 w-full">
         <div className="grid grid-cols-1 place-items-center pt-6">
           <h1>TESTIMONIALS</h1>
           <h1 className="text-[30px] p-4 max-w-md lg:text-[30px]   font-serif  text-center  font-semibold">
@@ -354,7 +354,7 @@ const [showPopup, setShowPopup] = useState(false);
             className="w-full   flex flex-col items-center justify-center "
           >
             {/* testimony 1 */}
-            <div className="grid grid-cols-1  h-80 w-full">
+            <div className="grid grid-cols-1  h-80 w-full shadow-lg">
               <div className="w-full h-52 border-2 bg-white grid grid-cols-1 place-items-center">
                 <p className="p-6">
                   “ It is a long established fact that a reader will be tracked
@@ -368,7 +368,7 @@ const [showPopup, setShowPopup] = useState(false);
           </div>
           {/* testimony 2 */}
 
-          <div data-aos="fade-left" className="w-full grid grid-cols-1  h-80">
+          <div data-aos="fade-left" className="w-full grid grid-cols-1 shadow-lg  h-80">
             <div className="w-full h-52 border-2 bg-white grid grid-cols-1 place-items-center">
               <p className="p-6">
                 “ It is a long established fact that a reader will be tracked

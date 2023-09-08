@@ -20,13 +20,13 @@ function page() {
 
 <div className=" grid  grid-cols-1 md:grid-cols-2 pl-10 pr-10 gap-4">
 <div
-          data-aos="fade-left"
+          data-aos="fade-right"
           className="w-full  items-center flex justify-center "
         >
           <img src={"/images/PIC22.jpg"} alt="photo" className="md:h-72 h-52" />
         </div>
         <div
-          data-aos="fade-right"
+          data-aos="fade-left"
           className="w-full   flex flex-col items-center justify-center "
         >
           {/* Services */}
@@ -72,7 +72,7 @@ function page() {
       <div className=" grid grid-cols-1 md:grid-cols-2 pl-10 pr-10 md:gap-6 gap-4">
       <div
           data-aos="fade-right"
-          className="w-full items-center flex justify-center md:order-last"
+          className="w-full items-center flex justify-center md:order-last "
         >
           <img src={"/images/PIC21.jpg"} alt="photo" className="md:h-72 h-52" />
         </div>
