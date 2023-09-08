@@ -1,5 +1,5 @@
 type Category =
 | "home"
-|"pages"
+|"Article"
 |"services"
-|contact
+|"contact"
