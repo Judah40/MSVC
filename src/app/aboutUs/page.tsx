@@ -3,7 +3,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 
-function aboutUs() {
+function AboutUs() {
   useEffect(() => {
     AOS.init({
       duration: 1500,
@@ -176,4 +176,4 @@ function aboutUs() {
   );
 }
 
-export default aboutUs;
+export default AboutUs;
