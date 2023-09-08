@@ -2,25 +2,27 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 type Props = {
-  category: string;
-  isActive: boolean;
+  categoryMain: string;
+  isActiveMain: boolean;
+  key?: string; // Add key to the props type
+  children?: React.ReactNode; 
 };
- const  Links:React.FC<Props> =({ category, isActive }: Props)=> {
+ const  NavHEader:React.FC<Props> =({ categoryMain, isActiveMain })=> {
 
-  const [state, setState] = useState(`/${category}`)
+  const [stateVal, setState] = useState(`/${categoryMain}`)
 
   useEffect(()=>{
-    if(category==="home"){
+    if(categoryMain==="home"){
       setState('/')
     }
   },[])
   return (
     <div className="flex justify-center">
-      <Link href={state} className={`navLink ${isActive && "underline decoration-orange-400 underline-offset-4 font-bold text-lg  "}`}>
-        {category}
+      <Link  href={stateVal} className={`navLink ${isActiveMain && "underline decoration-orange-400 underline-offset-4 font-bold text-lg  "}`}>
+        {categoryMain}
       </Link>
     </div>
   );
 }
 
-export default Links
+export default NavHEader

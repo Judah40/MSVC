@@ -27,9 +27,7 @@ const [showPopup, setShowPopup] = useState(false);
   };
 
   const closePopup = () => {
-    setSelectedPlan("");
-    setShowPopup(false);
-  };
+    setSelectedPlan(""); setShowPopup(false); };
 
   useEffect(() => {
     AOS.init({
