@@ -78,7 +78,7 @@ const [showPopup, setShowPopup] = useState(false);
           className="w-full  md:max-w-xs  grid grid-col-1  place-items-center"
         >
           <img
-            src={"/images/PIC2.jpg"}
+            src={"images/PIC2.jpg"}
             alt="photo"
             className="max-h-96 p-12 md:max-w-xs"
           />
@@ -118,7 +118,7 @@ const [showPopup, setShowPopup] = useState(false);
           className="w-full  md:max-w-xs grid grid-col-1  place-items-center"
         >
           <img
-            src={"/images/PIC1.jpg"}
+            src={"images/PIC1.jpg"}
             alt="photo"
             className=" max-h-96 p-12 md:max-w-xs"
           />
@@ -149,7 +149,7 @@ const [showPopup, setShowPopup] = useState(false);
           className="w-full md:max-w-xs  grid grid-col-1  place-items-center"
         >
           <img
-            src={"/images/PIC3.jpg"}
+            src={"images/PIC3.jpg"}
             alt="photo"
             className=" max-h-96 p-12 md:max-w-xs"
           />
@@ -199,19 +199,19 @@ const [showPopup, setShowPopup] = useState(false);
               data-aos="fade-right"
               className="max-w-xs  h-24 w-24 border-[0.1px] border-gray-300  place-items-center grid"
             >
-              <img src="/images/Icon.png" className="w-12 h-12" />
+              <img src="images/Icon.png" className="w-12 h-12" />
             </div>
             <div
               data-aos="fade-up"
               className="max-w-xs  h-24 w-24  border-[0.1px] border-gray-300 place-items-center grid"
             >
-              <img src="/images/Icon(1).png" className="w-12 h-12" />{" "}
+              <img src="images/Icon(1).png" className="w-12 h-12" />{" "}
             </div>
             <div
               data-aos="fade-left"
               className="max-w-xs  h-24 w-24 border-[0.1px] border-gray-300  place-items-center grid"
             >
-              <img src="/images/Vector.png" className="w-12 h-12" />{" "}
+              <img src="images/Vector.png" className="w-12 h-12" />{" "}
             </div>
           </div>
         </div>
@@ -220,7 +220,7 @@ const [showPopup, setShowPopup] = useState(false);
           className="w-full  items-center flex justify-center  "
         >
           <img
-            src={"/images/PIC4.jpg"}
+            src={"images/PIC4.jpg"}
             alt="photo"
             className="md:max-h-96 p-4"
           />
@@ -282,7 +282,7 @@ const [showPopup, setShowPopup] = useState(false);
           data-aos="fade-left"
           className="w-full  items-center flex justify-center "
         >
-          <img src={"/images/PIC5.jpg"} alt="photo" className="" />
+          <img src={"images/PIC5.jpg"} alt="photo" className="" />
         </div>
       </div>
       {/* Service 2 */}
@@ -332,7 +332,7 @@ const [showPopup, setShowPopup] = useState(false);
           data-aos="fade-right"
           className="w-full items-center flex justify-center md:order-first"
         >
-          <img src={"/images/PIC6.jpg"} alt="photo" className="" />
+          <img src={"images/PIC6.jpg"} alt="photo" className="" />
         </div>
       </div>
 
