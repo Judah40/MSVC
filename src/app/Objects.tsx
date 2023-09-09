@@ -66,6 +66,7 @@ const [showPopup, setShowPopup] = useState(false);
             src={"images/IMG_0087.jpg"}
             alt="photo"
            className="w-8/12 "
+           loading='lazy'
           />
         </div>
       </div>
@@ -81,6 +82,7 @@ const [showPopup, setShowPopup] = useState(false);
             src={"images/PIC2.jpg"}
             alt="photo"
             className="max-h-96 p-12 md:max-w-xs"
+            loading='lazy'
           />
 
           <h1 className="text-xl max-w-xs text-center font-medium font-serif ">
@@ -121,6 +123,7 @@ const [showPopup, setShowPopup] = useState(false);
             src={"images/PIC1.jpg"}
             alt="photo"
             className=" max-h-96 p-12 md:max-w-xs"
+            loading='lazy'
           />
 
           <h1 className="text-xl max-w-xs text-center font-medium font-serif ">
@@ -152,6 +155,7 @@ const [showPopup, setShowPopup] = useState(false);
             src={"images/PIC3.jpg"}
             alt="photo"
             className=" max-h-96 p-12 md:max-w-xs"
+            loading='lazy'
           />
 
           <h1 className="text-xl max-w-xs text-center font-medium font-serif ">
@@ -199,19 +203,19 @@ const [showPopup, setShowPopup] = useState(false);
               data-aos="fade-right"
               className="max-w-xs  h-24 w-24 border-[0.1px] border-gray-300  place-items-center grid"
             >
-              <img src="images/Icon.png" className="w-12 h-12" />
+              <img src="images/Icon.png" className="w-12 h-12" loading='lazy'/>
             </div>
             <div
               data-aos="fade-up"
               className="max-w-xs  h-24 w-24  border-[0.1px] border-gray-300 place-items-center grid"
             >
-              <img src="images/Icon(1).png" className="w-12 h-12" />{" "}
+              <img src="images/Icon(1).png" className="w-12 h-12" loading='lazy'/>{" "}
             </div>
             <div
               data-aos="fade-left"
               className="max-w-xs  h-24 w-24 border-[0.1px] border-gray-300  place-items-center grid"
             >
-              <img src="images/Vector.png" className="w-12 h-12" />{" "}
+              <img src="images/Vector.png" className="w-12 h-12" loading='lazy'/>{" "}
             </div>
           </div>
         </div>
@@ -223,6 +227,7 @@ const [showPopup, setShowPopup] = useState(false);
             src={"images/PIC4.jpg"}
             alt="photo"
             className="md:max-h-96 p-4"
+            loading='lazy'
           />
         </div>
       </div>
@@ -282,7 +287,7 @@ const [showPopup, setShowPopup] = useState(false);
           data-aos="fade-left"
           className="w-full  items-center flex justify-center "
         >
-          <img src={"images/PIC5.jpg"} alt="photo" className="" />
+          <img src={"images/PIC5.jpg"} alt="photo" className=""  loading='lazy'/>
         </div>
       </div>
       {/* Service 2 */}
@@ -332,7 +337,7 @@ const [showPopup, setShowPopup] = useState(false);
           data-aos="fade-right"
           className="w-full items-center flex justify-center md:order-first"
         >
-          <img src={"images/PIC6.jpg"} alt="photo" className="" />
+          <img src={"images/PIC6.jpg"} alt="photo" className="" loading='lazy'/>
         </div>
       </div>
 
