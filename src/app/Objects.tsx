@@ -63,7 +63,7 @@ const [showPopup, setShowPopup] = useState(false);
           className="w-full  h-96 bg-blue-400 rounded border-4  items-center flex justify-center "
         >
           <img
-            src={"/images/IMG_0087.jpg"}
+            src={"images/IMG_0087.jpg"}
             alt="photo"
            className="w-8/12 "
           />
