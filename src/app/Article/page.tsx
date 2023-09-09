@@ -14,7 +14,7 @@ function page() {
         </h1>
       </div>
       {/* first div blog */}
-      <div className="  grid  md:grid-cols-2 lg:grid-cols-3 place-items-center gap-12 p-4">
+      <div className="  grid grid-cols-1  md:grid-cols-2 lg:grid-cols-3 place-items-center gap-12 p-4">
         {/* blog1 */}
         <div className="w-96 h-96  place-items-center grid">
           <button className="w-80 h-full shadow-md  hover:shadow-lg hover:shadow-black flex flex-col gap-8 items-center ">
