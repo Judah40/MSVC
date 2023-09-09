@@ -23,7 +23,7 @@ function page() {
           data-aos="fade-right"
           className="w-full  items-center flex justify-center "
         >
-          <img src={"/images/PIC22.jpg"} alt="photo" className="md:h-72 h-52" />
+          <img src={"images/PIC22.jpg"} alt="photo" className="md:h-72 h-52" />
         </div>
         <div
           data-aos="fade-left"
@@ -74,7 +74,7 @@ function page() {
           data-aos="fade-right"
           className="w-full items-center flex justify-center md:order-last "
         >
-          <img src={"/images/PIC21.jpg"} alt="photo" className="md:h-72 h-52" />
+          <img src={"images/PIC21.jpg"} alt="photo" className="md:h-72 h-52" />
         </div>
         <div
           data-aos="fade-left"

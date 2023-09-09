@@ -31,7 +31,7 @@ function AboutUs() {
 
         {/* pic */}
         <div className="bg-blue-500">
-          <img src="/images/PIC7.jpg" className="  border shadow-md" />
+          <img src="images/PIC7.jpg" className="  border shadow-md" />
         </div>
       </div>
 
@@ -50,7 +50,7 @@ function AboutUs() {
               data-aos="fade-right"
               className="max-w-xs  h-32 w-32 border-[0.1px] border-white  place-items-center grid"
             >
-              <img src="/images/Icon.png" className="w-24 h-24" />
+              <img src="images/Icon.png" className="w-24 h-24" />
             </div>
             <div className="gap-3 grid grid-cols-1  ">
               <h1 className="font-bold font-serif text-center md:text-left text-xl">
@@ -72,7 +72,7 @@ function AboutUs() {
               data-aos="fade-right"
               className="max-w-xs  h-32 w-32 border-[0.1px] border-white  place-items-center grid"
             >
-              <img src="/images/Icon(1).png" className="w-24 h-24" />{" "}
+              <img src="images/Icon(1).png" className="w-24 h-24" />{" "}
             </div>
             <div className="gap-3 grid">
               <h1 className="font-bold font-serif text-center md:text-left text-xl">
@@ -95,7 +95,7 @@ function AboutUs() {
               data-aos="fade-right"
               className="max-w-xs  h-32 w-32 border-[0.1px] border-white  place-items-center grid"
             >
-              <img src="/images/Vector.png" className="w-24 h-24" />{" "}
+              <img src="images/Vector.png" className="w-24 h-24" />{" "}
             </div>
             <div className="gap-3 grid">
               <h1 className="font-bold font-serif text-center md:text-left text-xl">
@@ -113,7 +113,7 @@ function AboutUs() {
 
         <div className=" grid grid-cols-1 md:grid-cols-2  ">
           <div className=" flex justify-center ">
-            <img src="/images/PIC8.jpg" className="w-96  " />
+            <img src="images/PIC8.jpg" className="w-96  " />
           </div>
           <div className="flex background-main flex-col w-full md:max-w-sm p-8 items-center justify-center">
             <h1 className="text-white">SHORT STORY ABOUT US</h1>
@@ -156,18 +156,18 @@ function AboutUs() {
 
             {/* Pic1 */}
             <div>
-              <img src="/images/PIC9.jpg" />
+              <img src="images/PIC9.jpg" />
             </div>
           </div>
 
           <div className="grid grid-rows-2 gap-12 md:gap-12">
             {/* pic2 */}
             <div>
-              <img src="/images/PIC10.jpg"/>
+              <img src="images/PIC10.jpg"/>
             </div>
             {/* pic2 */}
             <div>
-              <img src="/images/PIC11.jpg"/>
+              <img src="images/PIC11.jpg"/>
             </div>
           </div>
         </div>

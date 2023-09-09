@@ -18,7 +18,7 @@ function page() {
         {/* blog1 */}
         <div className="w-96 h-96  place-items-center grid">
           <button className="w-80 h-full shadow-md  hover:shadow-lg hover:shadow-black flex flex-col gap-8 items-center ">
-            <img src="/images/PIC10.jpg" alt="pic10" className="" />
+            <img src="images/PIC10.jpg" alt="pic10" className="" />
             {/* title */}
             <div>
               <h1 className="text-lg font-serif font-medium text-[#9DBDFF]">
@@ -39,7 +39,7 @@ function page() {
         {/* blog2 */}
         <div className="w-96 h-96 place-items-center grid">
         <button className="w-80 h-full shadow-md  hover:shadow-lg hover:shadow-black flex flex-col gap-8 items-center ">
-            <img src="/images/PIC11.jpg" alt="pic10" className="" />
+            <img src="images/PIC11.jpg" alt="pic10" className="" />
             {/* title */}
             <div>
               <h1 className="text-lg font-serif font-medium text-[#9DBDFF]">
@@ -60,7 +60,7 @@ function page() {
         {/* blog3 */}
         <div className="w-96 h-96 place-items-center grid">
         <button className="w-80 h-full shadow-md  hover:shadow-lg hover:shadow-black flex flex-col gap-8 items-center ">
-            <img src="/images/PIC12.jpg" alt="pic10" className="" />
+            <img src="images/PIC12.jpg" alt="pic10" className="" />
             {/* title */}
             <div>
               <h1 className="text-lg font-serif font-medium text-[#9DBDFF]">
@@ -91,7 +91,7 @@ function page() {
        {/* blog1 */}
        <div className="w-96 h-96  place-items-center grid">
           <button className="w-80 h-full shadow-md  hover:shadow-lg hover:shadow-black flex flex-col gap-8 items-center ">
-            <img src="/images/PIC15.jpg" alt="pic10" className="" />
+            <img src="images/PIC15.jpg" alt="pic10" className="" />
             {/* title */}
             <div>
               <h1 className="text-lg font-serif font-medium text-[#9DBDFF]">
@@ -112,7 +112,7 @@ function page() {
         {/* blog2 */}
         <div className="w-96 h-96 place-items-center grid">
         <button className="w-80 h-full shadow-md  hover:shadow-lg hover:shadow-black flex flex-col gap-8 items-center ">
-            <img src="/images/PIC14.jpg" alt="pic10" className="" />
+            <img src="images/PIC14.jpg" alt="pic10" className="" />
             {/* title */}
             <div>
               <h1 className="text-lg font-serif font-medium text-[#9DBDFF]">
@@ -133,7 +133,7 @@ function page() {
         {/* blog3 */}
         <div className="w-96 h-96 place-items-center grid">
         <button className="w-80 h-full shadow-md  hover:shadow-lg hover:shadow-black flex flex-col gap-8 items-center ">
-            <img src="/images/PIC13.jpg" alt="pic10" className="" />
+            <img src="images/PIC13.jpg" alt="pic10" className="" />
             {/* title */}
             <div>
               <h1 className="text-lg font-serif font-medium text-[#9DBDFF]">
