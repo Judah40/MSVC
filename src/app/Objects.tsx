@@ -31,7 +31,7 @@ const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     AOS.init({
-      duration: 1500,
+      duration: 1000,
     });
   }, []);
   return (
@@ -41,15 +41,15 @@ const [showPopup, setShowPopup] = useState(false);
           data-aos="fade-right"
           className="w-full  p-4   flex flex-col items-center justify-center gap-6"
         >
-          <h1 className="text-[30px] w-10/12 lg:text-[30px]   font-serif  text-left  font-semibold">
+          <h1 className="text-[30px] w-10/12 lg:text-[30px]   font-serif text-center md:text-left  font-semibold">
             Your Key to Unlocking In Demand Career Opportunities!
           </h1>
-          <h1 className="w-10/12 text-xl font-thin text-left  ">
+          <h1 className="w-10/12 text-xl font-thin text-center md:text-left  ">
             Practical skills + Hands-on training = Vocational training magic!
             Embrace the power of vocational education and set yourselfup for
             success. #SkillsMasters
           </h1>
-          <div className="w-10/12">
+          <div className="w-full grid grid-cols-1 place-items-center md:place-items-start items-center md:w-10/12">
 
             <Link href={"/aboutUs"}>
           <button className="w-[250px] rounded h-[65px] bg-[#9DBDFF] hover:bg-[#80a8f7]">
@@ -60,7 +60,7 @@ const [showPopup, setShowPopup] = useState(false);
         </div>
         <div
           data-aos="fade-left"
-          className="w-full  h-96 bg-blue-400 rounded border-4  items-center flex justify-center "
+          className="w-full  h-72 md:h-96 bg-blue-400 rounded border-4  items-center flex justify-center "
         >
           <img
             src={"images/IMG_0087.jpg"}
@@ -126,7 +126,7 @@ const [showPopup, setShowPopup] = useState(false);
             loading='lazy'
           />
 
-          <h1 className="text-xl max-w-xs text-center font-medium font-serif ">
+          <h1 className="text-xl max-w-xs text-center  font-medium font-serif ">
             Certificate in Cosmetology
           </h1>
           <div className="max-w-md">
@@ -188,7 +188,7 @@ const [showPopup, setShowPopup] = useState(false);
           className="w-full   flex flex-col items-center justify-center gap-2 "
         >
           
-          <h1 className="text-[30px]  lg:text-[30px]   font-serif  text-center  font-semibold">
+          <h1 className="text-[30px]    font-serif  text-center  font-semibold">
             Discover the Art of Business Management through Vocational Training
           </h1>
           <h1 className="text-xl font-thin text-center  ">
@@ -235,7 +235,7 @@ const [showPopup, setShowPopup] = useState(false);
       {/* Services */}
       <div className="grid grid-cols-1 place-items-center ">
         <h1>OUR SERVICES</h1>
-        <h1 className=" text-[30px] max-w-md lg:text-[30px]   font-serif  text-center  font-semibold">
+        <h1 className=" text-[30px] max-w-md lg:text-[30px] p-8   font-serif  text-center  font-semibold">
           Are you ready to unlock your potential and embark on a journey of
           success{" "}
         </h1>
@@ -345,7 +345,7 @@ const [showPopup, setShowPopup] = useState(false);
       <div className=" grid grid-col-1 w-full">
         <div className="grid grid-cols-1 place-items-center pt-6">
           <h1>TESTIMONIALS</h1>
-          <h1 className="text-[30px] p-4 max-w-md lg:text-[30px]   font-serif  text-center  font-semibold">
+          <h1 className="text-[30px] p-8 max-w-md lg:text-[30px]   font-serif  text-center  font-semibold">
             What our Students says...{" "}
           </h1>
         </div>
