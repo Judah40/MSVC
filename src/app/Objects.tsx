@@ -34,6 +34,9 @@ const [showPopup, setShowPopup] = useState(false);
     AOS.init({
       duration: 1000,
     });
+
+    localStorage.setItem("refreshed", "true");
+
   }, []);
   return (
     <div className="gap-8 grid">
