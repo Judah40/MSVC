@@ -1,6 +1,12 @@
-import React from "react";
+'use client'
+
+import React, { useEffect } from "react";
 
 function page() {
+
+  useEffect(()=>{
+    window.location.reload();
+  },[])
   return (
     <div className="flex flex-col p-6 ">
       {/* title */}
