@@ -5,7 +5,12 @@ import React, { useEffect } from "react";
 function Article() {
 
   useEffect(()=>{
-    window.location.reload();
+    const refreshed= localStorage.getItem("refreshed")
+    if(refreshed==="true"){
+
+      window.location.reload();
+      localStorage.removeItem("refreshed")
+    }
   },[])
   return (
     <div className="flex flex-col p-6 ">
