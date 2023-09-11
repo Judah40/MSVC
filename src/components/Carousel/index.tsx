@@ -19,13 +19,13 @@ function CarouselMain() {
     { img: "../images/PIC20.jpg" },
   ];
   return (
-    <div className="w-full">
+    <div className=" ">
       <Slide>
         {slideImages.map((slideImage, index) => (
           <div key={index}>
             <div
-            className="w-full h-[600px] bg-cover"
-              style={{  backgroundImage: `url(${slideImage.img})` }}
+            className="lg:w-[500px] md:w-[240px] lg:h-[340px] h-[168px] lg:bg-cover bg-contain bg-no-repeat"
+              style={{  backgroundImage: `url(${slideImage.img})`,  }}
             ></div>
           </div>
         ))}

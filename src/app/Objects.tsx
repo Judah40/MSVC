@@ -8,6 +8,7 @@ import Link from "next/link";
 import CourseModal1 from "@/components/Modal/Course1Modal/page";
 import CourseModal2 from "@/components/Modal/Course2Modal/page";
 import CourseModal3 from "@/components/Modal/Course3Modal/page";
+import {ImCancelCircle} from "react-icons/im"
 
 // ..
 
@@ -31,7 +32,7 @@ const [showPopup, setShowPopup] = useState(false);
 
   useEffect(() => {
     AOS.init({
-      duration: 1500,
+      duration: 1000,
     });
   }, []);
   return (
@@ -41,15 +42,15 @@ const [showPopup, setShowPopup] = useState(false);
           data-aos="fade-right"
           className="w-full  p-4   flex flex-col items-center justify-center gap-6"
         >
-          <h1 className="text-[30px] w-10/12 lg:text-[30px]   font-serif  text-left  font-semibold">
+          <h1 className="text-[30px] w-10/12 lg:text-[30px]   font-serif text-center md:text-left  font-semibold">
             Your Key to Unlocking In Demand Career Opportunities!
           </h1>
-          <h1 className="w-10/12 text-xl font-thin text-left  ">
+          <h1 className="w-10/12 text-xl font-thin text-center md:text-left  ">
             Practical skills + Hands-on training = Vocational training magic!
             Embrace the power of vocational education and set yourselfup for
             success. #SkillsMasters
           </h1>
-          <div className="w-10/12">
+          <div className="w-full grid grid-cols-1 place-items-center md:place-items-start items-center md:w-10/12">
 
             <Link href={"/aboutUs"}>
           <button className="w-[250px] rounded h-[65px] bg-[#9DBDFF] hover:bg-[#80a8f7]">
@@ -60,7 +61,7 @@ const [showPopup, setShowPopup] = useState(false);
         </div>
         <div
           data-aos="fade-left"
-          className="w-full  h-96 bg-blue-400 rounded border-4  items-center flex justify-center "
+          className="w-full  h-72 md:h-96 bg-blue-400 rounded border-4  items-center flex justify-center "
         >
           <img
             src={"images/IMG_0087.jpg"}
@@ -72,24 +73,24 @@ const [showPopup, setShowPopup] = useState(false);
       </div>
 
       {/* some of the Courses Offered */}
-      <div className=" grid grid-cols-1 md:grid-cols-3   place-items-center md:place-items-center ">
+      <div className=" grid grid-cols-1 md:grid-cols-3   place-items-center  ">
         {/* Course 1 */}
         <div
           data-aos="fade-right"
-          className="w-full  md:max-w-xs  grid grid-col-1  place-items-center"
+          className="w-full  md:max-w-xs grid grid-col-1  place-items-center"
         >
           <img
             src={"images/PIC2.jpg"}
             alt="photo"
-            className="max-h-96 p-12 md:max-w-xs"
+            className="md:max-h-56 max-h-96 p-12 "
             loading='lazy'
           />
 
-          <h1 className="text-xl max-w-xs text-center font-medium font-serif ">
+          <h1 className="text-xl md:text-lg lg:text-xl  max-w-xs text-center font-medium font-serif ">
             Certificate in Cosmetology
           </h1>
-          <div className="max-w-md">
-            <p className="text-center p-4 text-sm text-gray-600 font-thin">
+          <div className="">
+            <p className="text-center p-4 md:text-xs lg:text-xl text-sm text-gray-600 font-thin">
               Beauty is more than just skin deep. As a cosmetologist, you have
               the ability to make people feel confident and beautiful.
             </p>
@@ -101,15 +102,64 @@ const [showPopup, setShowPopup] = useState(false);
             onClick={()=>{
               openPopup("course-1")
             }}
-            className="w-[250px] lg:w-10/12 h-[65px] border-2">
+            className="w-[250px] md:w-9/12 lg:w-10/12 h-[65px] border-2">
               Read More
             </button>
           </div>
         </div>
         {/* Course1 Modal */}
-        {showPopup && selectedPlan==="course-1"?<CourseModal1/>:(
-          showPopup && selectedPlan==="course-2"?<CourseModal2/>:(
-            showPopup && selectedPlan==="course-3"?<CourseModal3/>: null
+        {showPopup && selectedPlan==="course-1"? 
+        // course 1
+        <div
+      className="popup-container fixed inset-0 flex justify-center
+    items-center bg-gray-900 bg-opacity-70 z-50 overflow-y-auto"
+    >
+      <div className="popup p-6 flex justify-center rounded-lg shadow-md bg-white w-5/6 relative">
+        <div className="w-11/12  h-12  flex items-center justify-end">
+          <button 
+          onClick={()=>
+            setShowPopup(false)
+          }
+          >
+          <ImCancelCircle className="text-2xl text-red-500 hover:text-red-800"/>
+          </button>
+        </div>
+      </div>{" "}
+    </div>:(
+      // course 2
+          showPopup && selectedPlan==="course-2"?<div
+          className="popup-container fixed inset-0 flex justify-center
+        items-center bg-gray-900 bg-opacity-70 z-50 overflow-y-auto"
+        >
+          <div className="popup p-6 flex justify-center rounded-lg shadow-md bg-white w-5/6 relative">
+            <div className="w-11/12  h-12  flex items-center justify-end">
+              <button 
+              onClick={()=>
+                setShowPopup(false)
+              }
+              >
+              <ImCancelCircle className="text-2xl text-red-500 hover:text-red-800"/>
+              </button>
+            </div>
+          </div>{" "}
+        </div>:(
+          // course 3
+            showPopup && selectedPlan==="course-3"?<div
+            className="popup-container fixed inset-0 flex justify-center
+          items-center bg-gray-900 bg-opacity-70 z-50 overflow-y-auto"
+          >
+            <div className="popup p-6 flex justify-center rounded-lg shadow-md bg-white w-5/6 relative">
+              <div className="w-11/12  h-12  flex items-center justify-end">
+                <button 
+                onClick={()=>
+                  setShowPopup(false)
+                }
+                >
+                <ImCancelCircle className="text-2xl text-red-500 hover:text-red-800"/>
+                </button>
+              </div>
+            </div>{" "}
+          </div>: null
           )
         )}
 
@@ -122,15 +172,15 @@ const [showPopup, setShowPopup] = useState(false);
           <img
             src={"images/PIC1.jpg"}
             alt="photo"
-            className=" max-h-96 p-12 md:max-w-xs"
+            className=" md:max-h-56 max-h-96 p-12"
             loading='lazy'
           />
 
-          <h1 className="text-xl max-w-xs text-center font-medium font-serif ">
+          <h1 className="text-xl md:text-lg lg:text-xl  max-w-xs text-center  font-medium font-serif ">
             Certificate in Cosmetology
           </h1>
           <div className="max-w-md">
-            <p className="text-center p-4 text-sm text-gray-600 font-thin">
+            <p className="text-center p-4 md:text-xs lg:text-xl text-sm text-gray-600 font-thin">
               Beauty is more than just skin deep. As a cosmetologist, you have
               the ability to make people feel confident and beautiful.
             </p>
@@ -141,7 +191,7 @@ const [showPopup, setShowPopup] = useState(false);
              onClick={()=>{
               openPopup("course-2")
             }}
-            className="w-[250px] lg:w-10/12 h-[65px] border-2">
+            className="w-[250px] md:w-9/12 lg:w-10/12 h-[65px] border-2">
               Read More
             </button>
           </div>
@@ -154,15 +204,15 @@ const [showPopup, setShowPopup] = useState(false);
           <img
             src={"images/PIC3.jpg"}
             alt="photo"
-            className=" max-h-96 p-12 md:max-w-xs"
+            className=" md:max-h-56 max-h-96 p-12 "
             loading='lazy'
           />
 
-          <h1 className="text-xl max-w-xs text-center font-medium font-serif ">
+          <h1 className="text-lg md:text-lg lg:text-xl  max-w-xs text-center font-medium font-serif ">
             Certificate in Cosmetology
           </h1>
           <div className="max-w-md">
-            <p className="text-center p-4 text-sm text-gray-600 font-thin">
+            <p className="text-center p-4 md:text-xs lg:text-xl text-sm text-gray-600 font-thin">
               Beauty is more than just skin deep. As a cosmetologist, you have
               the ability to make people feel confident and beautiful.
             </p>
@@ -173,7 +223,7 @@ const [showPopup, setShowPopup] = useState(false);
              onClick={()=>{
               openPopup("course-3")
             }}
-            className="w-[250px] lg:w-10/12 h-[65px] border-2">
+            className="w-[250px] md:w-9/12 lg:w-10/12 h-[65px] border-2">
               Read More
             </button>
           </div>
@@ -188,7 +238,7 @@ const [showPopup, setShowPopup] = useState(false);
           className="w-full   flex flex-col items-center justify-center gap-2 "
         >
           
-          <h1 className="text-[30px]  lg:text-[30px]   font-serif  text-center  font-semibold">
+          <h1 className="text-[30px]    font-serif  text-center  font-semibold">
             Discover the Art of Business Management through Vocational Training
           </h1>
           <h1 className="text-xl font-thin text-center  ">
@@ -235,7 +285,7 @@ const [showPopup, setShowPopup] = useState(false);
       {/* Services */}
       <div className="grid grid-cols-1 place-items-center ">
         <h1>OUR SERVICES</h1>
-        <h1 className=" text-[30px] max-w-md lg:text-[30px]   font-serif  text-center  font-semibold">
+        <h1 className=" text-[30px] max-w-md lg:text-[30px] p-8   font-serif  text-center  font-semibold">
           Are you ready to unlock your potential and embark on a journey of
           success{" "}
         </h1>
@@ -345,7 +395,7 @@ const [showPopup, setShowPopup] = useState(false);
       <div className=" grid grid-col-1 w-full">
         <div className="grid grid-cols-1 place-items-center pt-6">
           <h1>TESTIMONIALS</h1>
-          <h1 className="text-[30px] p-4 max-w-md lg:text-[30px]   font-serif  text-center  font-semibold">
+          <h1 className="text-[30px] p-8 max-w-md lg:text-[30px]   font-serif  text-center  font-semibold">
             What our Students says...{" "}
           </h1>
         </div>

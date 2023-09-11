@@ -6,19 +6,19 @@ import React from "react";
 
 function Contact() {
   return (
-    <div className="grid grid-cols-1 place-items-center md:p-6">
-      <h1 className="text-xl font-semibold">ABOUT US</h1>
-      <div className="grid grid-cols-1 lg:grid-cols-2 p-12 gap-6 place-items-center">
+    <div className="grid grid-cols-1 place-items-center md:p-6 ">
+      <h1 className="text-xl p-4 font-semibold">CONTACT US</h1>
+      <div className="grid  grid-cols-1 md:flex md:justify-center  w-full lg:gap-12 gap-12 place-items-center">
         {/* pic */}
 
-        <div className="p-0 md:p-8 w-full border-2 border-[#9DBDFF] rounded-xl">
+        <div className="p-0 md:p-8 w-64 md:w-[260px] lg:w-[500px] lg:h-[400px]  border-2 border-[#9DBDFF] rounded-xl">
           <CarouselMain />
         </div>
 
         {/* Form */}
         <div
           data-aos="fade-left"
-          className="w-full   items-center flex justify-center md:w-11/12"
+          className="w-10/12  p-2   items-center flex justify-center md:w-6/12 lg:w-4/12 "
         >
           <Form />
         </div>
