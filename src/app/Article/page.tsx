@@ -2,7 +2,7 @@
 
 import React, { useEffect } from "react";
 
-function page() {
+function Article() {
 
   useEffect(()=>{
     window.location.reload();
@@ -162,4 +162,4 @@ function page() {
   );
 }
 
-export default page;
+export default Article;
